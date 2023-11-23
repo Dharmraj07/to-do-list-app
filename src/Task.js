@@ -1,26 +1,22 @@
-import React from 'react'
-
-// const Task = ({ task, onDelete }) => {
-//     console.log(task);
-//     return (
-//         <li key={task.id}>
-//             {task.text}
-//             <button onClick={() => onDelete(task.id)}>Delete</button>
-
-//         </li>
-//     )
-// }
+import React from 'react';
 
 const Task = ({ task, onDelete }) => {
-
-    return (
-      <li key={task.id}>
-        {task.text}
-        <hr/>
-        {task.id}
-        <button onClick={() => onDelete(task.id)}>Delete</button>
-      </li>
-    );
+  const buttonStyle = {
+    color: 'white',
+    backgroundColor: 'red',
+    border: 'none',
+    padding: '5px 10px',
+    cursor: 'pointer',
   };
 
-export default Task
+  return (
+    <li key={task.id}>
+     {task.text}
+      <button style={buttonStyle} onClick={() => onDelete(task.id)}>
+        X
+      </button>
+    </li>
+  );
+};
+
+export default Task;
