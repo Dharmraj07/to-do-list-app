@@ -1,5 +1,29 @@
 .App {
   text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+
+/* .App {
+  text-align: center;
 }
 
 .App-logo {
@@ -28,4 +52,4 @@
 
 .small {
   font-size: 0.75rem;
-}
+} */
